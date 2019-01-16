@@ -25,7 +25,7 @@ It follows an explanation of the arcs in the graph. `body fat` depends by the we
 
 Probably a mix of situations for `gains`. For instance, if the athleat sleeps more than 7.5 hours, eat enought but does not rest more than 36 hours. An other could be where the diet prevents a correct hormones production but the athleat trains, sleep and rest well.
 
-####Explaining how you decide the arcs orientation, in case they are not self- explaining.
+#### Explaining how you decide the arcs orientation, in case they are not self- explaining.
 
 They are all streigthforward.
 
@@ -36,5 +36,25 @@ $(e(age, weight), e(age, diet), e(gains, 1RM increase))$
 
 #### Identify at least 4 couple of nodes (the node of each couple should be not directly linked to each other) and analyze their d-separation properties possibly conditioning on others.
 
+The nodes graphs are denominated using letters by following the alphabet from left to right from top to bottom. It should be easy to the reader to remap them.
+
+1. (`age`, `body_fat`)
+There are five paths: $\{A,B,G\}, \{A,C,G\}, \{A,C,H,G\}  \{A,B,H,G\},  \{A,C,I,H,G\}$
+
+They are all chains, thus we can block them by conditioning on $\{B,C\}$
+
+2. (`age`, `gains`)
+There are five paths: $\{A,B,H\}, \{A, B, G, H\}, \{A,C, H\}  \{A,C,G,H\},  \{A,C,I,H\}$
+
+In the second path, $G$ is a collider for $B, H$. We can condition on $B, C$. $B$ will prevent the paths $\{A,B,H\},  \{A, B, G, H\}$. $C$ will prevent the paths $\{A,C, H\} \{A,C,G,H\},  \{A,C,I,H\}$.
+
+3. (`age`, `hormones production`)
+There are five paths: $\{A,C,I\}, \{A, C, H, I\},  \{A,B ,G, H, I\},  \{A, B, H, I\}, \{ A,B,G,C,H,I\}$. We just need to condition on $C$ to block the chain $\{ A, C, I\}$ since $G$ is a collider for $B$ and $H$ while $H$ is a collider for $B$ and $I$ so they are already blocked.
+
+4. (`diet`, `sleep`)
+There are five paths: $\{C, H, D \}, \{ C,G,H,D\}, \{C, H, I, D\}$.
+All those paths are already blocked by $H$ that is a collider
+
 
 #### Discuss how d-connected variables are in fact dependent in the real problem, while d-separated variables are instead independent in the real problem.
+
