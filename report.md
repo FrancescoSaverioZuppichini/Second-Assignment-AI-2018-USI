@@ -81,31 +81,48 @@ For the data I have relied on your personal experience/common sense.
 ### goal
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.00.35.png)
 
-Usually people that do weightlifting want to build muscle
+Usually people that do weightlifting want to build muscle. 
 
 ### weight
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.00.45.png)
 
+Of course, if we bulk we expect in almost all cases to increase our weight. Sometimes, due to some other factors, like stress or bad habits, this may influence our way to eat, train etx and thus we are not gain new weight. 
+
+If the cut period is not properly planned, some people can eat a lot after a too strong diet and thus exponentially increase their weight instead of reduce it.
+
 ### diet
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.15.png)
+
+If we bulk we have no eat more, since this is very easy  we have a very low probably to still be in deficit. This reflect the case where we think we are eating enough but we are still in deficit. Cutting is harder since an atleath needs to correctly tracks is kcal so we have a 10% probability of still beeing in surplus.
 
 ### sleep
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.22.png)
 
+Some people does not sleep enough. Be aware that sleep does not only take in account the number of hours slept but also the time we go to bed. There is a big difference between an atleath that goes to bed at 23 and wakes up at 7 than one that goes to bed ad 01 and wakes up at 9.
+
 ### rest
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.32.png)
+
+Even if is well know that our body need some rest time between workouts, some people still over train.
 
 ### sex
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.39.png)
 
+Most of the weightlifters are male.
+
 ### genetic
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.45.png)
+
+Only a small part of the population has a good genetic
 
 ### body fat
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.02.45.png)
 
+Body fat depends on weight, diet and gains. If we are in surplus then our body fat will increase no matters what.
+
 ### gains
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.04.18.png)
+Gains are the core node in the graph. They depends on a lot of factor. Intuitivelly, in everything goes well, first column, we will gain muscle. If some of the variables such as rest, sleep and diet are not positive we will probably not gain a lot
 
 ### hormones
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.08.48.png)
