@@ -37,36 +37,40 @@ They are all streigthforward.
 #### Which arrows can be reversed without being detectable by a statistical test? Explain why.
 
 The following set of edges can be reversed without being detectable by a statistical test.
-$(e(age, weight), e(age, diet), e(gains, 1RM increase))$ 
+$(e(goal, weight), e(goal, diet), e(gains, 1RM increase))$ 
 
 #### Identify at least 4 couple of nodes (the node of each couple should be not directly linked to each other) and analyze their d-separation properties possibly conditioning on others.
 
-The nodes graphs are denominated using letters by following the alphabet from left to right from top to bottom. It should be easy to the reader to remap them.
+The nodes of the net are denominated by the first two consonant in the name for simplicity.
 
-1. (`genetic`, `body_fat`)
-There are five paths: $\{A,B,G\}, \{A,C,G\}, \{A,C,H,G\}  \{A,B,H,G\},  \{A,C,I,H,G\}$
+1. (`goal`, `body_fat`)
+These are the paths: $\{GL,WT,BF\}, \{GL,DT,BF\}, \{GL,DT,GN,BF\}  \{GL,DT,HR,GN, BF\}$
 
-They are all chains, thus we can block them by conditioning on $\{B,C\}$
+They are all chains, thus we can block them by conditioning on $\{WT,DT\}$
 
-2. (`genetic`, `gains`)
-There are five paths: $\{A,B,H\}, \{A, B, G, H\}, \{A,C, H\}  \{A,C,G,H\},  \{A,C,I,H\}$
+2. (`goal`, `gains`)
+These are the paths: $\{GL,DT,GN\}, \{GL, WT, BF, GN\}, \{GL,DT, BF, GN\}  \{GL, DT ,HR, GN\}, \{GL, WT, BF, DT, GN \}, \{GL, WT, BF, DT, HR, GN \}$
 
-In the second path, $G$ is a collider for $B, H$. We can condition on $B, C$. $B$ will prevent the paths $\{A,B,H\},  \{A, B, G, H\}$. $C$ will prevent the paths $\{A,C, H\} \{A,C,G,H\},  \{A,C,I,H\}$.
+$BF$ is a collider for $WT, DT, GN$ so it already blocks some paths. We can condition on $DT$ to block al paths.
 
-3. (`genetic`, `hormones production`)
-There are five paths: $\{A,C,I\}, \{A, C, H, I\},  \{A,B ,G, H, I\},  \{A, B, H, I\}, \{ A,B,G,C,H,I\}$. We just need to condition on $C$ to block the chain $\{ A, C, I\}$ since $G$ is a collider for $B$ and $H$ while $H$ is a collider for $B$ and $I$ so they are already blocked.
+3. (`goal`, `hormones`)
+These are the paths : $\{GL, WT, BF, GN, HR \}, \{GL, WT, BF, DT, HR \}, \{GL, WT, BF, DT, GN, HR \}, \{GL, DT, BT, GN, HR \}, \{GL, DT, GN, HR \} \{GL, DT, HR \}$.
+
+As before, we can block on $DT$ to block all paths between $GL$ and $HR$.
 
 4. (`diet`, `sleep`)
-There are five paths: $\{C, H, D \}, \{ C,G,H,D\}, \{C, H, I, D\}$.
-All those paths are already blocked by $H$ that is a collider
+These are the paths: $\{DT, GN, SL \}, \{DT, BF, GN, SL \}, \{DT, HR, GN, SL \}, \{DT, GL , WT, BF, GN, SL \},  \{DT, GL , WT, BF, GN, HR, SL \}$
 
+All the paths are already blocked by $GN$ that is a collider.
 
 #### Discuss how d-connected variables are in fact dependent in the real problem, while d-separated variables are instead independent in the real problem.
 
-- `genetic` and `weight` are dependnt since with a good genetic also influence weight. The reader must know at least one person that without training looks buffed.
-- `genetic` and `diet` are dependent since genetic can influence the contrains of what a person can eat.
+- `goal` and `weight` are dependet since the goal that we choose determinate the weight we want to have
+- `goal` and `diet` are dependent since the goal we picked also must be followed by a correct diet. If we want to loose weight, we must eat less
 - `diet` and `sleep`. They independent, since what a person eat does not have repercussion on the sleep time an quality. 
-- `hormones production` and `body fat` are likely dependent since if an atleat produces more hormones it can gains more muscle and increase his body fat. Unfortunally, it is scientific prooved that is impossibile to gain muscle and loose fat at the same time. For the interested reader it follows a very simple explanation. To syntetize new muscle tissue the body needs to have a surplos of energy. Thus we must eat more than our base metabolism needs, this is called 'bulking'. Having more energy leads to gain more weight and some body fat. The amount of body fat is directly proportional at the amount of kcal in surplus. Hoewer, they are several factors that also can influence the amount of body fat in a person, such as a history of bad diet and poor training. 
+- `hormones ` and `body fat` are likely dependent since if an atleat produces more hormones it can gains more muscle and increase his body fat. Unfortunally, it is scientific prooved that is impossibile to gain muscle and loose fat at the same time. For the interested reader it follows a very simple explanation. To syntetize new muscle tissue the body needs to have a surplos of energy. Thus we must eat more than our base metabolism needs, this is called 'bulking'. Having more energy leads to gain more weight and some body fat. The amount of body fat is directly proportional at the amount of kcal in surplus. Hoewer, they are several factors that also can influence the amount of body fat in a person, such as a history of bad diet and poor training. 
 - `gains` and `body fat` are depending. This can be seen very intuitivelly by following the explanation in the last paragraph. Again, if we gain muscle then we must had a surplus of kcal in the dies, so we have gain also some body fat
 - `gains` and `1RM increase`. Surely, in we increase the amount of muscle we also will lift more.
 - `rest` and `1RM increase`. Resting between workouts avoid over training and leave to our body the time to build new muscles to be able to adapt and lift more.
+  
+  Ab interesting consideration is that if we set `gains` to true and I know the current `diet` is in surplus then I can correctly guess the outcome of `sleep` since if a person eat enough and had gains then it must have slept for a correct amount of time.
