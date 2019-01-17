@@ -1,24 +1,29 @@
 # Artificial Intelligence 2018/2019
 ## Second Homework: Causal Inference
 
-My model represents weightlifting. The variables are, in order of appearence from left to right:
+My model represents weightlifting.  
 
-- `genetic`. The genetic of the athleat
-- `weight`
-- `diet`. Represent what the athleat eats. It's outcome is `1`, athleat eats around 200~400 kcal more that its baseline, or `0`, less that its baseline.
-- `sleep`. How much the athleat sleeps. We assume that sleep time begin around 23:00 ~ 00:00. The outcome is `1` if the athleat sleeps more that `7.5` hourse, `0` otherwise.
-- `rest`. The hours between two workouts. `1` if more than 36 hours, `0` otherwise.
-- `sex`. `1` is male, `0` is female.
-- `body fat`. `1` if more than 20%, `0` if less.
-- `hormone production`. `1` is hormone production is under average, `0` if more. Hormones such as `gh` and `testosterone` are essetianl to better gains.
-- `gains`. Measured in grams of muscle per month. `1` if more than 400g, `0` otherwise.
-- `1RM_increase`. In % how much we increase the one range of motion every month on the base exercises: `deadlift`, `squat` and `bench press`. `1` if 5% more than last month, `0` otherwise.
+![alt](./images/net.png)
 
-It follows an explanation of the arcs in the graph. `body fat` depends by the weight, the diet, booth depend of the `genetic`, and the gains. The more you gain the more you weight.
+The variables are eleven in total. In the program, I renamed the state name for better readibility. It follows a description of each variable in order of appearence from left to right.
 
-`gains` is the most important node. It depends by `weight`, `diet`, `sleep`, `rest` and `hormone production`. The late, directly depend on `sex`, `sleep` and `diet`. 
+- goal. The final goal of the atleat. It can be bulking, gain muscle, or cut, loose body fat. States are bulk and cut
+- weight. If true, the atleat gains weight from last month, if false otherwise. The states are called increased and not_increased
+- diet. Represent what the athleat eats. It's outcome is true, athleat eats around 200~400 kcal more that his baseline, false otherwise. These states are called surplus and defict
+- sleep. How much the athleat sleeps. We assume that sleep time begin around 23:00 ~ 00:00. The outcome is 1 if the athleat sleeps more that 7.5 hourse, 0 otherwise.
+- rest. The hours between two workouts. enough if more than 36 hours, low otherwise.
+- sex. male and female.
+- body fat. increased and not_increased from last month.
+- genetic. good or averege. The genetic of the atleat.
+- hormones. low is hormone production is under average, high if more. Hormones such as gh and testosterone are essetianl to gains.
+- gains. Measured in grams of muscle per month. increase if more than 300g, same otherwise.
+- 1RM_increase. In % how much we increase the one range of motion from last month on the base exercises: deadlift, squat and bench press. increase if 5% more than last month, not increase otherwise.
 
-`1RM increase` depends on the `gains`.
+It follows an explanation of the arcs in the graph. body fat depends by the weight, the diet, booth depend of the age, and the gains. The more you gain the more you weight.
+
+gains is the most important node. It depends by weight, diet, sleep, rest and hormone production. The late, directly depend on sex, sleep and diet. 
+
+1RM increase depends on the gains.
 
 
 #### State which is the objective of the network: for instance, highlight a couple of situations in which decision making could be difficult and in which the graph could provide valuable indications.
