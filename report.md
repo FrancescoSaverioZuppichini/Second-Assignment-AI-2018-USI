@@ -74,3 +74,28 @@ All the paths are already blocked by $GN$ that is a collider.
 - `rest` and `1RM increase`. Resting between workouts avoid over training and leave to our body the time to build new muscles to be able to adapt and lift more.
   
   Ab interesting consideration is that if we set `gains` to true and I know the current `diet` is in surplus then I can correctly guess the outcome of `sleep` since if a person eat enough and had gains then it must have slept for a correct amount of time.
+  
+## diocane
+
+### goal
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.00.35.png)
+### weight
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.00.45.png)
+### diet
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.15.png)
+### sleep
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.22.png)
+### rest
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.32.png)
+### sex
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.39.png)
+### genetic
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.01.45.png)
+### body fat
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.02.45.png)
+### gains
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.04.18.png)
+### hormones
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.08.48.png)
+### 1RM
+![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.08.55.png)
