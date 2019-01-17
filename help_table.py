@@ -8,10 +8,10 @@ nodes = ['goal','weight', 'diet', 'sleep', 'rest', 'sex', 'genetic', 'body fat',
 
 def render_section(node, image):
 
-  return "### {}\n{}\n".format(node, render_image(image))
+  return "\item {}\n{}\n".format(node, render_image(image))
 
 def render_image(image):
-  return "![alt]({})".format(image)
+  return "\includegraphics[width=textwidth]{" + image + "}"
 
 rendered = ''
 
