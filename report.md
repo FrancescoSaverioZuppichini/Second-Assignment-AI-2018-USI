@@ -75,10 +75,13 @@ All the paths are already blocked by $GN$ that is a collider.
   
   Ab interesting consideration is that if we set `gains` to true and I know the current `diet` is in surplus then I can correctly guess the outcome of `sleep` since if a person eat enough and had gains then it must have slept for a correct amount of time.
   
-## diocane
+## Conditional probability tables (CPTs)
+For the data I have relied on your personal experience/common sense.
 
 ### goal
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.00.35.png)
+
+Usually people that do weightlifting want to build muscle
 
 ### weight
 ![alt](./images/nodes/definitions/Screen Shot 2019-01-17 at 10.00.45.png)
