@@ -1,6 +1,8 @@
 \documentclass[11pt]{article}
 \usepackage{graphicx}
 \usepackage{float}
+\usepackage{mathtools}
+\newcommand\given[1][]{\:#1\vert\:}
 
 \title{Second Homework: Causal Inference}
 \author{Francesco Saverio Zuppichini}
@@ -12,24 +14,24 @@ My model represents weightlifting.
 \includegraphics[width=\textwidth]{./images/net.png}
 
 The variables are eleven in total. In the program, I renamed the state
-name for better readibility. It follows a description of each variable
-in order of appearence from left to right.
+name for better readability. It follows a description of each variable
+in order of apperance from left to right.
 
 \begin{itemize}
 \item
-  goal. The final goal of the atleat. It can be bulking, gain muscle, or
+  goal. The final goal of the athlete. It can be bulking, gain muscle, or
   cut, loose body fat. States are bulk and cut
 \item
-  weight. If true, the atleat gains weight from last month, if false
+  weight. If true, the athlete gains weight from last month, if false
   otherwise. The states are called increased and not\_increased
 \item
-  diet. Represent what the athleat eats. It's outcome is true, athleat
+  diet. Represent what the athlete eats. It's outcome is true, athlete
   eats around 200\textasciitilde{}400 kcal more that his baseline, false
   otherwise. These states are called surplus and defict
 \item
-  sleep. How much the athleat sleeps. We assume that sleep time begin
-  around 23:00 \textasciitilde{} 00:00. The outcome is 1 if the athleat
-  sleeps more that 7.5 hourse, 0 otherwise.
+  sleep. How much the athlete sleeps. We assume that sleep time begin
+  around 23:00 \textasciitilde{} 00:00. The outcome is 1 if the athlete
+  sleeps more that 7.5 hours, 0 otherwise.
 \item
   rest. The hours between two workouts. enough if more than 36 hours,
   low otherwise.
@@ -38,10 +40,10 @@ in order of appearence from left to right.
 \item
   body fat. increased and not\_increased from last month.
 \item
-  genetic. good or averege. The genetic of the atleat.
+  genetic. good or average. The genetic of the athlete.
 \item
   hormones. low is hormone production is under average, high if more.
-  Hormones such as gh and testosterone are essetianl to gains.
+  Hormones such as gh and testosterone are essential to gains.
 \item
   gains. Measured in grams of muscle per month. increase if more than
   300g, same otherwise.
@@ -63,7 +65,7 @@ diet.
 
 \subsection{State which is the objective of the network: for instance, highlight a couple of situations in which decision making could be difficult and in which the graph could provide valuable indications}
 
-Probably a mix of situations for \textbf{gains}. For instance, if the athleat sleeps more than 7.5 hours, eat enought but does not rest more than 36 hours. An other could be where the diet prevents a correct hormones production but the athleat trains, sleep and rest well.
+Probably a mix of situations for \textbf{gains}. For instance, if the athlete sleeps more than 7.5 hours, eat enough but does not rest more than 36 hours. An other could be where the diet prevents a correct hormones production but the athlete trains, sleep and rest well.
 
 \subsection{Explaining how you decide the arcs orientation, in case they are not self- explaining}
 
@@ -80,7 +82,7 @@ $(e(goal, weight), e(goal, diet), e(gains, 1RM increase))$
 The nodes of the net are denominated by the first two consonant in the name for simplicity.
 \begin{enumerate}
 	\item (\textbf{goal}, \textbf{body\_fat})
-These are the paths: $\{GL,WT,BF\}, {GL,DT,BF\}, \{GL,DT,GN,BF\}, \{GL,DT,HR,GN, BF\}$
+These are the paths: $\{GL,WT,BF\}, \{GL,DT,BF\}, \{GL,DT,GN,BF\}, \{GL,DT,HR,GN, BF\}$
 
 \item (\textbf{goal}, \textbf{gains})
 These are the paths: $\{GL,DT,GN\}, \{GL, WT, BF, GN\}, \{GL,DT, BF, GN\}  \{GL, DT ,HR, GN\}, \{GL, WT, BF, DT, GN \}, \{GL, WT, BF, DT, HR, GN \}$
@@ -113,7 +115,7 @@ All the paths are already blocked by $GN$ that is a collider.
   person eat does not have repercussion on the sleep time an quality.
 \item
   \texttt{hormones} and \texttt{body\ fat} are likely dependent since if
-  an atleat produces more hormones it can gains more muscle and increase
+  an athlete produces more hormones it can gains more muscle and increase
   his body fat. Unfortunally, it is scientific prooved that is
   impossibile to gain muscle and loose fat at the same time. For the
   interested reader it follows a very simple explanation. To syntetize
@@ -165,14 +167,14 @@ If the cut period is not properly planned, some people can eat a lot after a too
 \includegraphics[width=0.66\textwidth]{./images/nodes/definitions/3.png}
 \end{figure}
 
-If we bulk we have no eat more, since this is very easy  we have a very low probably to still be in deficit. This reflect the case where we think we are eating enough but we are still in deficit. Cutting is harder since an atleath needs to correctly tracks is kcal so we have a 10\% probability of still beeing in surplus.
+If we bulk we have no eat more, since this is very easy  we have a very low probably to still be in deficit. This reflect the case where we think we are eating enough but we are still in deficit. Cutting is harder since an athlete needs to correctly tracks is kcal so we have a 10\% probability of still beeing in surplus.
 
 \item sleep
 \begin{figure}[H]
 \includegraphics[width=0.33\textwidth]{./images/nodes/definitions/4.png}
 \end{figure}
 
-Some people does not sleep enough. Be aware that sleep does not only take in account the number of hours slept but also the time we go to bed. There is a big difference between an atleath that goes to bed at 23 and wakes up at 7 than one that goes to bed ad 01 and wakes up at 9.
+Some people does not sleep enough. Be aware that sleep does not only take in account the number of hours slept but also the time we go to bed. There is a big difference between an athlete that goes to bed at 23 and wakes up at 7 than one that goes to bed ad 01 and wakes up at 9.
 
 \item rest
 \begin{figure}[H]
@@ -205,16 +207,42 @@ Body fat depends on weight, diet and gains. If we are in surplus then our body f
 \end{figure}
 Gains are the core node in the graph. They depends on a lot of factor. Intuitivelly, in everything goes well, first column, we will gain muscle. If some of the variables such as rest, sleep and diet are not positive we will probably not gain a lot
 
-
 \item hormones
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{./images/nodes/definitions/10.png}
+In our graph, hormones depends on diet, sleep, sex and genetic. With a diet in surplus, enough sleep we see a higher hormones in the population. If we also have a good genetic this value increases. Females have a slightly lower hormone productions than mans. On the other hand, if we don't sleep enough our body won't produce as much hormones as if we slept enough, this is reflected on the lower probabilities on having an hormone's high production showed in the table.
 \end{figure}
-\item 1RM
+\item 1RM 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{./images/nodes/definitions/11.png}
+\includegraphics[width=0.5\textwidth]{./images/nodes/definitions/11.png}
 \end{figure}
 \end{itemize}
 
+\section{Causal Inference}
+I used the control value feature from genie (\texttt{https://support.bayesfusion.com/docs/GeNIe/bn\_controllingvalues.html}).
+\subsection{Calculate the causal effect of X on Y.}
+	I pick $X$ equal to \emph{diet} and $Y$ equal to \emph{body fat}. $X$ can assume two values, $deficit$ and $surplus$, while $Y$ can be $increased$ and $not_increased$. We first want to find out
+	\begin{equation}
+		P(Y=y \given do(X=x))
+	\label{eq:1}
+	\end{equation}
+	
+We want to observe $Y=increased$, so by plugging the values into \ref{eq:1}, we want to calculate
+$P(Y=increased \given do(X=surplus))$ and $P(Y=increased \given do(X=deficit))$. We can easily do so with genie by controlling the value of $X$.
 
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{images/control_value/1}
+\end{figure}
+
+We obtain:
+\begin{align}
+P(Y=increased \given do(X=surplus)) = 0.993 \\
+P(Y=not\_increased \given do(X=deficit)) = 0.007
+\end{align}
+
+The results make sense, since if we eat more than our baseline, $X=surplus$, we have an almost certain probability to weight more than last month. On the other hand, if we eat less than our baseline we are almost sure we can't increase our weight.
+
+\subsection{Identify possible confounders between X and Y.}
+\subsection{Would it be practically possible in your specific problem to perform also a randomized controlled study to disentangle the causal effect between the variables from their correlation?
+}
 \end{document}
