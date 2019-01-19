@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.11)  19 JAN 2019 12:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.11)  19 JAN 2019 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -305,24 +305,39 @@ File: images/control_value/1.png Graphic file (type png)
 Package pdftex.def Info: images/control_value/1.png used on input line 234.
 (pdftex.def)             Requested size: 360.0pt x 118.20364pt.
  [7 <./images/nodes/definitions/10.png> <./images/nodes/definitions/11.png>] [8 <./images/control_value/1.png>]
-Overfull \hbox (14.68797pt too wide) in paragraph at lines 268--268
+Overfull \hbox (14.68797pt too wide) in paragraph at lines 267--267
 [] 
  []
 
-[9] (/Users/vaevictis/Documents/Project/Second-Assignment-AI-2018-USI/.texpadtmp/report.aux) ) 
+
+Overfull \hbox (40.51912pt too wide) in paragraph at lines 276--276
+[] 
+ []
+
+
+Overfull \hbox (87.20035pt too wide) in paragraph at lines 294--294
+[] 
+ []
+
+[9]
+Overfull \hbox (9.83234pt too wide) in paragraph at lines 294--296
+\OT1/cmr/m/n/10.95 From the pre-vi-ous point, we know that $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Y \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 increase \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 do\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 surplus\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; C \OT1/cmr/m/n/10.95 =
+ []
+
+[10] (/Users/vaevictis/Documents/Project/Second-Assignment-AI-2018-USI/.texpadtmp/report.aux) ) 
 Here is how much of TeX's memory you used:
  2802 strings out of 492995
  41776 string characters out of 6132703
- 106860 words of memory out of 5000000
+ 108860 words of memory out of 5000000
  6310 multiletter control sequences out of 15000+600000
  10223 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,25p,483b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/vaevictis/Documents/Project/Second-Assignment-AI-2018-USI/.texpadtmp/report.pdf (9 pages, 221185 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /Users/vaevictis/Documents/Project/Second-Assignment-AI-2018-USI/.texpadtmp/report.pdf (10 pages, 232062 bytes).
 PDF statistics:
- 97 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 104 PDF objects out of 1000 (max. 8388607)
+ 55 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

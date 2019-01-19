@@ -254,12 +254,11 @@ Average Causal Effect (ACE) is defined as follow:
 P(Y=1 \given do(X=1)) - P(Y=1 \given do(X=0)) 
 \label{eq: ace}
 \end{equation}
-
 Using Equation \ref{eq: ace} in our network
 
 \begin{align}
-P(Y=increased \given do(X=surplus)) = 0.993 \\
-P(Y=increased\given do(X=deficit)) = 0
+&P(Y=increased \given do(X=surplus)) = 0.993 \\
+&P(Y=increased\given do(X=deficit)) = 0
 \end{align}
 Thus
 \begin{align*}
@@ -268,5 +267,31 @@ P(Y=increased \given do(X=surplus)) - P(Y=increased\given do(X=deficit)) = \\
 \end{align*}
 The ACE is $0.993$
 \subsection{Choose another variable C and calculate the c-specific effect of X on Y.}
+I choose $C$ to be goal, to calculate the c-specific effect. I want to calculate $P(Y=increase \given do(X=surplus), C=bulk)$. So the probability to gain fat given that we eat enough and we are in a bulking phase. Following rule 2 from the book, we also need the set of variables that blocks all the backdoor paths from $X$ to $Y$, in our case $C$ already blocks all the such paths.
+\begin{align*}
+&P(Y=increased \given do(X=surplus), C=bulk) &= \\
+& P(Y=increased \given X=surplus, S=increase, Z=bulk)P(S=increase) &+  \\
+& P(Y=increased \given X=surplus, S=same, Z=bulk)P(S=same) &= \\ 
+& 1 \cdot 0.499 + 0.99 \cdot 0.501 &= 0.994 
+\end{align*}
+The results makes perfect sense since we want to find out the probability of gain weight if we eat more than the baseline and we are in a bulking phase.
+
+\subsection{Identify a minimal set of variables that must be measured in order to estimate the c-specific effect of X on Y.}
+In this case, $C$, $X$ and $Y$ since we have not any set $S$ of variable that we need to ensure the paths from $X$ to $Y$ are closed.
+
+\subsection{Choose a function g and compute the effect of the conditional intervention of X=g(C) on Y}
+Let $g(x) = 
+\begin{cases} 
+1 \quad if \ x = 1 \\
+0 \quad if \ x =  0 
+\end{cases}
+$
+So, using Equation 3.17 from the book:
+
+\begin{align*}
+P (Y = increase \given do(X=g(C)) &=  P(Y=increase \given do(X=surplus),C=bulk)P(C=bulk) \\
+&+ P(Y= increase \given do(X=deficit),C=0)P(C=cut)
+\end{align*}
+From the previous point, we know that $P(Y=increase \given do(X=surplus),C=bulk) =   $
 
 \end{document}
