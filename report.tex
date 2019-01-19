@@ -221,13 +221,13 @@ In our graph, hormones depends on diet, sleep, sex and genetic. With a diet in s
 \section{Causal Inference}
 I used the control value feature from genie (\texttt{https://support.bayesfusion.com/docs/GeNIe/bn\_controllingvalues.html}).
 \subsection{Calculate the causal effect of X on Y.}
-	I pick $X$ equal to \emph{diet} and $Y$ equal to \emph{body fat}. $X$ can assume two values, $deficit$ and $surplus$, while $Y$ can be $increased$ and $not_increased$. We first want to find out
+	I pick $X$ equal to \emph{diet} and $Y$ equal to \emph{body fat}. $X$ can assume two values, $deficit$ and $surplus$, while $Y$ can be $increased$ and $not\_increased$. We first want to find out
 	\begin{equation}
 		P(Y=y \given do(X=x))
 	\label{eq:1}
 	\end{equation}
 	
-We want to observe $Y=increased$, so by plugging the values into \ref{eq:1}, we want to calculate
+We want to observe $Y$, so by plugging the values into \ref{eq:1}, we want to calculate
 $P(Y=increased \given do(X=surplus))$ and $P(Y=increased \given do(X=deficit))$. We can easily do so with genie by controlling the value of $X$.
 
 \begin{figure}[H]
@@ -237,12 +237,36 @@ $P(Y=increased \given do(X=surplus))$ and $P(Y=increased \given do(X=deficit))$.
 We obtain:
 \begin{align}
 P(Y=increased \given do(X=surplus)) = 0.993 \\
-P(Y=not\_increased \given do(X=deficit)) = 0.007
+P(Y=not\_increased \given do(X=surplus)) = 0.007
 \end{align}
 
 The results make sense, since if we eat more than our baseline, $X=surplus$, we have an almost certain probability to weight more than last month. On the other hand, if we eat less than our baseline we are almost sure we can't increase our weight.
 
 \subsection{Identify possible confounders between X and Y.}
+There is no confounder between $X$ and $Y$
 \subsection{Would it be practically possible in your specific problem to perform also a randomized controlled study to disentangle the causal effect between the variables from their correlation?
 }
+Yes, sure. In my problem perform a randomized controlled study is possible. The diet can be imposed to two groups of the population and then we can observe the effect on body fat.
+
+\subsection{Compute the ACE of X on Y}
+Average Causal Effect (ACE) is defined as follow:
+\begin{equation}
+P(Y=1 \given do(X=1)) - P(Y=1 \given do(X=0)) 
+\label{eq: ace}
+\end{equation}
+
+Using Equation \ref{eq: ace} in our network
+
+\begin{align}
+P(Y=increased \given do(X=surplus)) = 0.993 \\
+P(Y=increased\given do(X=deficit)) = 0
+\end{align}
+Thus
+\begin{align*}
+P(Y=increased \given do(X=surplus)) - P(Y=increased\given do(X=deficit)) = \\
+=  0.993 - 0 = 0.993
+\end{align*}
+The ACE is $0.993$
+\subsection{Choose another variable C and calculate the c-specific effect of X on Y.}
+
 \end{document}
