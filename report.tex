@@ -13,9 +13,9 @@ My model represents weightlifting.
 
 \includegraphics[width=\textwidth]{./images/net.png}
 
-The variables are eleven in total. In the program, I renamed the state
-name for better readability. It follows a description of each variable
-in order of apperance from left to right.
+The variables are eleven in total. In the program, I renamed the states
+for better readability. It follows a description of each variable
+in order of appearance from left to right.
 
 \begin{itemize}
 \item
@@ -25,7 +25,7 @@ in order of apperance from left to right.
   weight. If true, the athlete gains weight from last month, if false
   otherwise. The states are called increased and not\_increased
 \item
-  diet. Represent what the athlete eats. It's outcome is true, athlete
+  diet. Represent what the athlete eats. If it's outcome is true, athlete
   eats around 200\textasciitilde{}400 kcal more that his baseline, false
   otherwise. These states are called surplus and defict
 \item
@@ -37,12 +37,13 @@ in order of apperance from left to right.
   low otherwise.
 \item
   sex. male and female.
+\item genetic. Some people are more lucky than others. A good genetic yields to better hormones production  thus better gains.
 \item
   body fat. increased and not\_increased from last month.
 \item
   genetic. good or average. The genetic of the athlete.
 \item
-  hormones. low is hormone production is under average, high if more.
+  hormones. low if hormones production is under average, high if more.
   Hormones such as gh and testosterone are essential to gains.
 \item
   gains. Measured in grams of muscle per month. increase if more than
@@ -52,10 +53,9 @@ in order of apperance from left to right.
   last month on the base exercises: deadlift, squat and bench press.
   increase if 5\% more than last month, not increase otherwise.
 \end{itemize}
-
 It follows an explanation of the arcs in the graph. body fat depends by
-the weight, the diet, booth depend of the age, and the gains. The more
-you gain the more you weight.
+the weight, the diet, booth depend of the goal, and the gains. The more
+you gain the more you weight the more body fat you gain.
 
 gains is the most important node. It depends by weight, diet, sleep,
 rest and hormone production. The late, directly depend on sex, sleep and
@@ -69,7 +69,7 @@ Probably a mix of situations for \textbf{gains}. For instance, if the athlete sl
 
 \subsection{Explaining how you decide the arcs orientation, in case they are not self- explaining}
 
-They are all streigthforward.
+They are all straightforward.
 
 \subsection{Which arrows can be reversed without being detectable by a statistical test? Explain why}
 
@@ -82,22 +82,25 @@ $(e(goal, weight), e(goal, diet), e(gains, 1RM increase))$
 The nodes of the net are denominated by the first two consonant in the name for simplicity.
 \begin{enumerate}
 	\item (\textbf{goal}, \textbf{body\_fat})
-These are the paths: $\{GL,WT,BF\}, \{GL,DT,BF\}, \{GL,DT,GN,BF\}, \{GL,DT,HR,GN, BF\}$
+These are the paths: $\{GL,WT,BF\}, \{GL,DT,BF\}, \{GL,DT,GN,BF\},$\\ $\{GL,DT,HR,GN, BF\}$
 
 \item (\textbf{goal}, \textbf{gains})
-These are the paths: $\{GL,DT,GN\}, \{GL, WT, BF, GN\}, \{GL,DT, BF, GN\}  \{GL, DT ,HR, GN\}, \{GL, WT, BF, DT, GN \}, \{GL, WT, BF, DT, HR, GN \}$
+These are the paths: $\{GL,DT,GN\}, \{GL, WT, BF, GN\}, \{GL,DT, BF, GN\},$\\
+$\{GL, DT ,HR, GN\}, \{GL, WT, BF, DT, GN \}, \{GL, WT, BF, DT, HR, GN \}$
 
 
-$BF$ is a collider for $WT, DT, GN$ so it already blocks some paths. We can condition on $DT$ to block al pat
+$BF$ is a collider for $WT, DT, GN$ so it already blocks some paths. We can condition on $DT$ to block all paths
 \item (\textbf{goal}, \textbf{hormones})
-These are the paths : $\{GL, WT, BF, GN, HR \}, \{GL, WT, BF, DT, HR \}, \{GL, WT, BF, DT, GN, HR \}, \{GL, DT, BT, GN, HR \}, \{GL, DT, GN, HR \} \{GL, DT, HR \}$.
+These are the paths : $\{GL, WT, BF, GN, HR \}, \{GL, WT, BF, DT, HR \},$\\
+$\{GL, WT, BF, DT, GN, HR \},\{GL, DT, BT, GN, HR \}, \{GL, DT, GN, HR \} \{GL, DT, HR \}$.
 
 As before, we can block on $DT$ to block all paths between $GL$ and $HR$.
 
 \item (\textbf{diet}, \textbf{sleep})
-These are the paths: $\{DT, GN, SL \}, \{DT, BF, GN, SL \}, \{DT, HR, GN, SL \}, \{DT, GL , WT, BF, GN, SL \},  \{DT, GL , WT, BF, GN, HR, SL \}$
+These are the paths: $\{DT, GN, SL \}, \{DT, BF, GN, SL \}, \{DT, HR, GN, SL \},$\\$
+\{DT, GL , WT, BF, GN, SL \},  \{DT, GL , WT, BF, GN, HR, SL \}, \{DT, HR, SL\}$
 
-All the paths are already blocked by $GN$ that is a collider.
+All the paths are already blocked by $GN$ and $HR$.
 \end{enumerate}
 
 \subsection{Discuss how d-connected variables are in fact dependent in the real problem, while d-separated variables are instead independent in the real problem.}
@@ -146,7 +149,7 @@ All the paths are already blocked by $GN$ that is a collider.
   time.
 \end{itemize}
 
-\subsection{Conditional probability tables (CPTs)}
+\section{Conditional probability tables (CPTs)}
 For the data I have relied on your personal experience/common sense.
 \begin{itemize}
 \item goal
@@ -233,13 +236,11 @@ $P(Y=increased \given do(X=surplus))$ and $P(Y=increased \given do(X=deficit))$.
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{images/control_value/1}
 \end{figure}
-
 We obtain:
 \begin{align}
 P(Y=increased \given do(X=surplus)) = 0.993 \\
 P(Y=not\_increased \given do(X=surplus)) = 0.007
 \end{align}
-
 The results make sense, since if we eat more than our baseline, $X=surplus$, we have an almost certain probability to weight more than last month. On the other hand, if we eat less than our baseline we are almost sure we can't increase our weight.
 
 \subsection{Identify possible confounders between X and Y.}
@@ -267,7 +268,7 @@ P(Y=increased \given do(X=surplus)) - P(Y=increased\given do(X=deficit)) = \\
 \end{align*}
 The ACE is $0.993$
 \subsection{Choose another variable C and calculate the c-specific effect of X on Y.}
-I choose $C$ to be goal, to calculate the c-specific effect. I want to calculate $P(Y=increase \given do(X=surplus), C=bulk)$. So the probability to gain fat given that we eat enough and we are in a bulking phase. Following rule 2 from the book, we also need the set of variables that blocks all the backdoor paths from $X$ to $Y$, in our case $C$ already blocks all the such paths.
+I choose $C=bulk$ equal to \texttt{goal}. In order calculate the c-specific effect, we need to estimate $P(Y=increase \given do(X=surplus), C=bulk)$. So the probability to gain fat given we eat enough and we are in a bulking phase. Following rule 2 from the book, we also need the set of variables that blocks all the backdoor paths from $X$ to $Y$, called $S$, in our case $C$ already blocks all the such paths. Thus
 \begin{align*}
 &P(Y=increased \given do(X=surplus), C=bulk) &= \\
 & P(Y=increased \given X=surplus, C=bulk) &= 0.998
@@ -278,18 +279,62 @@ The results makes perfect sense since we want to find out the probability of gai
 In this case, $C$, $X$ and $Y$ since we have not any set $S$ of variable that we need to ensure the paths from $X$ to $Y$ are closed.
 
 \subsection{Choose a function g and compute the effect of the conditional intervention of X=g(C) on Y}
-Let $g(x) = 
+Let 
+\begin{equation}
+g(x) = 
 \begin{cases} 
 1 \quad if \ x = 1 \\
 0 \quad if \ x =  0 
 \end{cases}
-$
-So, using Equation 3.17 from the book:
+\end{equation}
+So, by using Equation 3.17 from the book we get:
 
 \begin{align*}
 P (Y = increase \given do(X=g(C)) &=  P(Y=increase \given do(X=surplus),C=bulk)P(C=bulk) \\
-&+ P(Y= increase \given do(X=deficit),C=0)P(C=cut)
+&+ P(Y= increase \given do(X=deficit),C=cut)P(C=cut)
 \end{align*}
-From the previous point, we know that $P(Y=increase \given do(X=surplus),C=bulk) =   $
+From the 2.6 we know 
+$$P(Y=increase \given do(X=surplus),C=bulk) =  0.998$$
+Thus:
+\begin{align*}
+&P (Y = increase \given do(X=g(C)) = \\
+& 0.998 \cdot 0.6 + P(Y= increase \given do(X=deficit),C=cut)P(C=cut) = \\
+&0.59 + 0 = 0.59
+\end{align*}
+
+\subsection{Identify possible mediating variables between X and Y and calculate the CDE of Y changing the value of X.}
+There are not mediating variables between $X$ and $Y$. In the case we have a mediating variable, we need to calculate
+\begin{equation}
+P(Y=y \given do(X=x), do(Z=z)) - P(Y=y \given do(X = x'), do(Z=z))
+\end{equation}
+
+\section{Simulation}
+
+The only parent of $X$ is \texttt{goal}, we assume that this variable is not measurable.
+\subsection{Calculate the causal effect of X on Y.}
+To calculate the \emph{casual effect} of $X$ on $Y$ we can use again equation \ref{eq:1}. We know the casual effect rule (Rule 1 on the book) that we need the parents of $X$, unfortunately we can not rely on  that since \texttt{goal} cannot be measured by assumption.
+The backdoor criterion (Definition 3.3.1 form the book) cannot help us either since there is not a set $Z$ that satisfies it. 
+The front-door criterion (Theorem 3.4.1) cannot be used since the there is no variable that blocks all the directed path from $X$ to $Y$.
+
+\subsection{Identify possible confounders between X and Y.}
+There is no confounder between $X$ and $Y$
+\subsection{Would it be practically possible in your specific problem to perform also a randomized controlled study to disentangle the causal effect between the variables from their correlation?}
+Same as 3.3.
+\subsection{Compute the ACE of X on Y}
+We cannot computed since \texttt{goal} is not measurable by assumption.
+\subsection{Choose another variable C and calculate the c-specific effect of X on Y.}
+\subsection{Identify a minimal set of variables that must be measured in order to estimate the c-specific effect of X on Y.}
+We cannot computed since we cannot measure any set of variables $S$ such that $S \cup C$ satisfies the backdoor criterion. See Rule 2 on the book.
+
+\subsection{Choose a function g and compute the effect of the conditional intervention of X=g(C) on Y}
+The c-specific effect cannot be computed, thus we are not able to answer this question.
+
+\subsection{Identify possible mediating variables between X and Y and calculate the CDE of Y changing the value of X.}
+There are not mediating variables between $X$ and $Y$. 
+
+\section{Comment on the results}
+\subsection{What kind of experience have you got with this model? E.g., is the causal model responding in a sensible way to your queries? What should be changed/modified to make it more realistic?
+}
+Working with this model give me the possibility to use all the material we studied in class. Moreover, it helps me a lot to understand how intervention works. The casual model responded correctly to my queries with any surprises probably due to the fact that the outcome of the variable is already easy to guess by just using logic. To make it more realistic lots of factors should be included, for example the exercises done by the athlete (compound vs isolation), the volume, the intensity and others factors that could in affect the hormones production.
 
 \end{document}

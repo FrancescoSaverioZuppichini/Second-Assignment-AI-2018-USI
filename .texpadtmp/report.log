@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.11)  20 JAN 2019 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.11)  20 JAN 2019 20:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -220,119 +220,129 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images/net.png>] [2]
-Overfull \hbox (221.43254pt too wide) in paragraph at lines 84--86
-[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 goal\OT1/cmr/m/n/10.95 , \OT1/cmr/bx/n/10.95 body[]fat\OT1/cmr/m/n/10.95 ) These are the paths: $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; BF\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; GN; BF\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; HR; GN; BF\OMS/cmsy/m/n/10.95 g$ 
+Overfull \hbox (102.6473pt too wide) in paragraph at lines 84--86
+[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 goal\OT1/cmr/m/n/10.95 , \OT1/cmr/bx/n/10.95 body[]fat\OT1/cmr/m/n/10.95 ) These are the paths: $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; BF\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; GN; BF\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ;$ 
  []
 
 
-Overfull \hbox (465.82367pt too wide) in paragraph at lines 87--89
-[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 goal\OT1/cmr/m/n/10.95 , \OT1/cmr/bx/n/10.95 gains\OT1/cmr/m/n/10.95 ) These are the paths: $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; BF; GN\OMS/cmsy/m/n/10.95 gf\OML/cmm/m/it/10.95 GL; DT; HR; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; DT; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; DT; HR; GN\OMS/cmsy/m/n/10.95 g$ 
+Overfull \hbox (106.31969pt too wide) in paragraph at lines 87--90
+[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 goal\OT1/cmr/m/n/10.95 , \OT1/cmr/bx/n/10.95 gains\OT1/cmr/m/n/10.95 ) These are the paths: $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; BF; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ;$ 
  []
 
 
-Overfull \hbox (540.0485pt too wide) in paragraph at lines 92--94
-[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 goal\OT1/cmr/m/n/10.95 , \OT1/cmr/bx/n/10.95 hor-mones\OT1/cmr/m/n/10.95 ) These are the paths : $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; GN; HR\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; DT; HR\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; DT; GN; HR\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; BT; GN; HR\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; GN; HR\OMS/cmsy/m/n/10.95 gf\OML/cmm/m/it/10.95 GL; DT; HR\OMS/cmsy/m/n/10.95 g$\OT1/cmr/m/n/10.95 . 
+Overfull \hbox (29.92072pt too wide) in paragraph at lines 87--90
+\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; HR; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; DT; GN\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; DT; HR; GN\OMS/cmsy/m/n/10.95 g$ 
  []
 
 
-Overfull \hbox (400.80812pt too wide) in paragraph at lines 97--99
-[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 diet\OT1/cmr/m/n/10.95 , \OT1/cmr/bx/n/10.95 sleep\OT1/cmr/m/n/10.95 ) These are the paths: $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; GN; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; BF; GN; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; HR; GN; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; GL; WT; BF; GN; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; GL; WT; BF; GN; HR; SL\OMS/cmsy/m/n/10.95 g$ 
+Overfull \hbox (103.46198pt too wide) in paragraph at lines 93--96
+[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 goal\OT1/cmr/m/n/10.95 , \OT1/cmr/bx/n/10.95 hor-mones\OT1/cmr/m/n/10.95 ) These are the paths : $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; GN; HR\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; DT; HR\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ;$ 
  []
 
-[3] <./images/nodes/definitions/1.png, id=23, 166.6225pt x 57.21375pt>
+
+Overfull \hbox (102.13661pt too wide) in paragraph at lines 93--96
+\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; WT; BF; DT; GN; HR\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; BT; GN; HR\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 GL; DT; GN; HR\OMS/cmsy/m/n/10.95 gf\OML/cmm/m/it/10.95 GL; DT; HR\OMS/cmsy/m/n/10.95 g$\OT1/cmr/m/n/10.95 . 
+ []
+
+
+Overfull \hbox (98.47678pt too wide) in paragraph at lines 99--102
+[]\OT1/cmr/m/n/10.95 (\OT1/cmr/bx/n/10.95 diet\OT1/cmr/m/n/10.95 , \OT1/cmr/bx/n/10.95 sleep\OT1/cmr/m/n/10.95 ) These are the paths: $\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; GN; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; BF; GN; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; HR; GN; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ;$ 
+ []
+
+
+Overfull \hbox (43.301pt too wide) in paragraph at lines 99--102
+\OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; GL; WT; BF; GN; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; GL; WT; BF; GN; HR; SL\OMS/cmsy/m/n/10.95 g\OML/cmm/m/it/10.95 ; \OMS/cmsy/m/n/10.95 f\OML/cmm/m/it/10.95 DT; HR; SL\OMS/cmsy/m/n/10.95 g$ 
+ []
+
+[3] [4] <./images/nodes/definitions/1.png, id=26, 166.6225pt x 57.21375pt>
 File: ./images/nodes/definitions/1.png Graphic file (type png)
  <use ./images/nodes/definitions/1.png>
-Package pdftex.def Info: ./images/nodes/definitions/1.png used on input line 154.
+Package pdftex.def Info: ./images/nodes/definitions/1.png used on input line 157.
 (pdftex.def)             Requested size: 118.80066pt x 40.794pt.
- [4 <./images/nodes/definitions/1.png>] <./images/nodes/definitions/2.png, id=28, 239.89626pt x 51.19125pt>
+ <./images/nodes/definitions/2.png, id=27, 239.89626pt x 51.19125pt>
 File: ./images/nodes/definitions/2.png Graphic file (type png)
  <use ./images/nodes/definitions/2.png>
-Package pdftex.def Info: ./images/nodes/definitions/2.png used on input line 159.
+Package pdftex.def Info: ./images/nodes/definitions/2.png used on input line 162.
 (pdftex.def)             Requested size: 237.60132pt x 50.70213pt.
- <./images/nodes/definitions/3.png, id=29, 232.87pt x 48.18pt>
+ <./images/nodes/definitions/3.png, id=28, 232.87pt x 48.18pt>
 File: ./images/nodes/definitions/3.png Graphic file (type png)
  <use ./images/nodes/definitions/3.png>
-Package pdftex.def Info: ./images/nodes/definitions/3.png used on input line 167.
+Package pdftex.def Info: ./images/nodes/definitions/3.png used on input line 170.
 (pdftex.def)             Requested size: 237.60132pt x 49.16055pt.
- <./images/nodes/definitions/4.png, id=30, 159.59625pt x 49.18375pt>
+ <./images/nodes/definitions/4.png, id=29, 159.59625pt x 49.18375pt>
 File: ./images/nodes/definitions/4.png Graphic file (type png)
  <use ./images/nodes/definitions/4.png>
-Package pdftex.def Info: ./images/nodes/definitions/4.png used on input line 174.
+Package pdftex.def Info: ./images/nodes/definitions/4.png used on input line 177.
 (pdftex.def)             Requested size: 118.80066pt x 36.61153pt.
- <./images/nodes/definitions/5.png, id=31, 159.59625pt x 50.1875pt>
+ [5 <./images/nodes/definitions/1.png> <./images/nodes/definitions/2.png> <./images/nodes/definitions/3.png>] <./images/nodes/definitions/5.png, id=36, 159.59625pt x 50.1875pt>
 File: ./images/nodes/definitions/5.png Graphic file (type png)
  <use ./images/nodes/definitions/5.png>
-Package pdftex.def Info: ./images/nodes/definitions/5.png used on input line 181.
+Package pdftex.def Info: ./images/nodes/definitions/5.png used on input line 184.
 (pdftex.def)             Requested size: 118.80066pt x 37.3587pt.
- [5 <./images/nodes/definitions/2.png> <./images/nodes/definitions/3.png> <./images/nodes/definitions/4.png>] <./images/nodes/definitions/6.png, id=38, 161.60374pt x 48.18pt>
+ <./images/nodes/definitions/6.png, id=37, 161.60374pt x 48.18pt>
 File: ./images/nodes/definitions/6.png Graphic file (type png)
  <use ./images/nodes/definitions/6.png>
-Package pdftex.def Info: ./images/nodes/definitions/6.png used on input line 188.
+Package pdftex.def Info: ./images/nodes/definitions/6.png used on input line 191.
 (pdftex.def)             Requested size: 118.80066pt x 35.41884pt.
- <./images/nodes/definitions/7.png, id=39, 161.60374pt x 49.18375pt>
+ <./images/nodes/definitions/7.png, id=38, 161.60374pt x 49.18375pt>
 File: ./images/nodes/definitions/7.png Graphic file (type png)
  <use ./images/nodes/definitions/7.png>
-Package pdftex.def Info: ./images/nodes/definitions/7.png used on input line 194.
+Package pdftex.def Info: ./images/nodes/definitions/7.png used on input line 197.
 (pdftex.def)             Requested size: 118.80066pt x 36.15672pt.
- <./images/nodes/definitions/8.png, id=40, 658.46pt x 80.3pt>
+ <./images/nodes/definitions/8.png, id=39, 658.46pt x 80.3pt>
 File: ./images/nodes/definitions/8.png Graphic file (type png)
  <use ./images/nodes/definitions/8.png>
-Package pdftex.def Info: ./images/nodes/definitions/8.png used on input line 200.
+Package pdftex.def Info: ./images/nodes/definitions/8.png used on input line 203.
 (pdftex.def)             Requested size: 360.0pt x 43.90291pt.
- <./images/nodes/definitions/9.png, id=41, 1220.56pt x 92.345pt>
+ [6 <./images/nodes/definitions/4.png> <./images/nodes/definitions/5.png> <./images/nodes/definitions/6.png> <./images/nodes/definitions/7.png>] <./images/nodes/definitions/9.png, id=47, 1220.56pt x 92.345pt>
 File: ./images/nodes/definitions/9.png Graphic file (type png)
  <use ./images/nodes/definitions/9.png>
-Package pdftex.def Info: ./images/nodes/definitions/9.png used on input line 206.
+Package pdftex.def Info: ./images/nodes/definitions/9.png used on input line 209.
 (pdftex.def)             Requested size: 360.0pt x 27.2373pt.
- <./images/nodes/definitions/10.png, id=42, 1214.5375pt x 93.34875pt>
+ <./images/nodes/definitions/10.png, id=48, 1214.5375pt x 93.34875pt>
 File: ./images/nodes/definitions/10.png Graphic file (type png)
  <use ./images/nodes/definitions/10.png>
-Package pdftex.def Info: ./images/nodes/definitions/10.png used on input line 212.
+Package pdftex.def Info: ./images/nodes/definitions/10.png used on input line 215.
 (pdftex.def)             Requested size: 360.0pt x 27.66867pt.
- [6 <./images/nodes/definitions/5.png> <./images/nodes/definitions/6.png> <./images/nodes/definitions/7.png> <./images/nodes/definitions/8.png> <./images/nodes/definitions/9.png>] <./images/nodes/definitions/11.png, id=51, 242.9075pt x 57.21375pt>
+ <./images/nodes/definitions/11.png, id=49, 242.9075pt x 57.21375pt>
 File: ./images/nodes/definitions/11.png Graphic file (type png)
  <use ./images/nodes/definitions/11.png>
-Package pdftex.def Info: ./images/nodes/definitions/11.png used on input line 217.
+Package pdftex.def Info: ./images/nodes/definitions/11.png used on input line 220.
 (pdftex.def)             Requested size: 180.0pt x 42.39598pt.
 
-Overfull \hbox (238.41478pt too wide) in paragraph at lines 222--223
+Overfull \hbox (238.41478pt too wide) in paragraph at lines 225--226
 \OT1/cmr/m/n/10.95 I used the con-trol value fea-ture from ge-nie (\OT1/cmtt/m/n/10.95 https://support.bayesfusion.com/docs/GeNIe/bn[]controllingvalues.html\OT1/cmr/m/n/10.95 ). 
  []
 
-<images/control_value/1.png, id=52, 602.25pt x 197.73875pt>
+[7 <./images/nodes/definitions/8.png> <./images/nodes/definitions/9.png> <./images/nodes/definitions/10.png> <./images/nodes/definitions/11.png>] <images/control_value/1.png, id=58, 602.25pt x 197.73875pt>
 File: images/control_value/1.png Graphic file (type png)
  <use images/control_value/1.png>
-Package pdftex.def Info: images/control_value/1.png used on input line 234.
+Package pdftex.def Info: images/control_value/1.png used on input line 237.
 (pdftex.def)             Requested size: 360.0pt x 118.20364pt.
- [7 <./images/nodes/definitions/10.png> <./images/nodes/definitions/11.png>] [8 <./images/control_value/1.png>]
-Overfull \hbox (14.68797pt too wide) in paragraph at lines 267--267
+ [8 <./images/control_value/1.png>]
+Overfull \hbox (14.68797pt too wide) in paragraph at lines 268--268
 [] 
  []
 
-
-Overfull \hbox (87.20035pt too wide) in paragraph at lines 292--292
+[9]
+Overfull \hbox (87.20035pt too wide) in paragraph at lines 295--295
 [] 
  []
 
-
-Overfull \hbox (9.83234pt too wide) in paragraph at lines 292--294
-\OT1/cmr/m/n/10.95 From the pre-vi-ous point, we know that $\OML/cmm/m/it/10.95 P\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 Y \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 increase \OMS/cmsy/m/n/10.95 j \OML/cmm/m/it/10.95 do\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 X \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 surplus\OT1/cmr/m/n/10.95 )\OML/cmm/m/it/10.95 ; C \OT1/cmr/m/n/10.95 =
- []
-
-[9] [10] (/Users/vaevictis/Documents/Project/Second-Assignment-AI-2018-USI/.texpadtmp/report.aux) ) 
+[10] [11] [12] (/Users/vaevictis/Documents/Project/Second-Assignment-AI-2018-USI/.texpadtmp/report.aux) ) 
 Here is how much of TeX's memory you used:
  2802 strings out of 492995
  41776 string characters out of 6132703
- 107860 words of memory out of 5000000
+ 106860 words of memory out of 5000000
  6310 multiletter control sequences out of 15000+600000
  10223 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,11n,25p,483b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/vaevictis/Documents/Project/Second-Assignment-AI-2018-USI/.texpadtmp/report.pdf (10 pages, 231271 bytes).
+ 39i,11n,25p,569b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /Users/vaevictis/Documents/Project/Second-Assignment-AI-2018-USI/.texpadtmp/report.pdf (12 pages, 244777 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 114 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 
