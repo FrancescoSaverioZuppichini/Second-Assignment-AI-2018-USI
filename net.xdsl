@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="genetic">
+			<state id="good" />
+			<state id="average" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="goal">
+			<state id="bulk" />
+			<state id="cut" />
+			<probabilities>0.6 0.4</probabilities>
+		</cpt>
+		<cpt id="diet">
+			<state id="surplus" />
+			<state id="deficit" />
+			<parents>goal</parents>
+			<probabilities>0.95 0.05 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="weight">
+			<state id="increased" />
+			<state id="not_increased" />
+			<parents>goal</parents>
+			<probabilities>0.9 0.1 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="sleep">
+			<state id="enough" />
+			<state id="low" />
+			<probabilities>0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="rest">
+			<state id="enough" />
+			<state id="low" />
+			<probabilities>0.9 0.1</probabilities>
+		</cpt>
+		<cpt id="sex">
+			<state id="male" />
+			<state id="female" />
+			<probabilities>0.7 0.3</probabilities>
+		</cpt>
+		<cpt id="hormones">
+			<state id="high" />
+			<state id="low" />
+			<parents>diet sleep sex genetic</parents>
+			<probabilities>0.9 0.1 0.8 0.2 0.8 0.2 0.7 0.3 0.8 0.2 0.7 0.3 0.7 0.3 0.6 0.4 0.85 0.15 0.8 0.2 0.8 0.2 0.7 0.3 0.3 0.7 0.2 0.8 0.2 0.8 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Node8">
+			<state id="increase" />
+			<state id="same" />
+			<parents>diet sleep rest hormones</parents>
+			<probabilities>1 0 0.9 0.1 0.6 0.4 0.3 0.7 0.4 0.6 0.3 0.7 0.3 0.7 0.2 0.8 0 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1</probabilities>
+		</cpt>
+		<cpt id="body_fat">
+			<state id="increased" />
+			<state id="not_increased" />
+			<parents>diet weight Node8</parents>
+			<probabilities>1 0 1 0 1 0 0.9 0.1 0 1 0 1 0.1 0.9 0 1</probabilities>
+		</cpt>
+		<cpt id="Node9">
+			<state id="increased" />
+			<state id="not_increased" />
+			<parents>Node8</parents>
+			<probabilities>0.9 0.1 0.1 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3705.0 ACADEMIC" name="Network1" faultnameformat="nodestate">
+			<node id="genetic">
+				<name>genetic</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>423 703 501 734</position>
+			</node>
+			<node id="diet">
+				<name>diet</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>433 319 512 366</position>
+			</node>
+			<node id="weight">
+				<name>weight</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>431 213 512 253</position>
+			</node>
+			<node id="sleep">
+				<name>sleep</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>426 427 511 475</position>
+			</node>
+			<node id="rest">
+				<name>rest</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>428 514 509 559</position>
+			</node>
+			<node id="sex">
+				<name>sex</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>427 607 495 649</position>
+			</node>
+			<node id="body_fat">
+				<name>body fat</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>672 278 759 321</position>
+			</node>
+			<node id="Node8">
+				<name>gains</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>672 413 757 460</position>
+			</node>
+			<node id="Node9">
+				<name>1RM</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>910 418 952 444</position>
+			</node>
+			<node id="hormones">
+				<name>hormones</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>681 529 743 567</position>
+			</node>
+			<node id="goal">
+				<name>goal</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>214 255 288 293</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
